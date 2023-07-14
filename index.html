@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="code.js" defer> </script>
+    <script src="calc.js" defer> </script>
+
+<style>
+.message {
+    background-color: rgb(243, 219, 219);
+    color: greenyellow;
+    padding: 1em;
+    width: 10em;
+}
+
+</style>
+
+
+</head>
+<body style="background-color: burlywood;">
+
+
+<h1>Learn about the Dom</h1>
+
+<div class="message">
+
+    <script src="calc.js"> </script>
+
+</div>
+
+
+<div>
+
+<input type="text" class="username">
+<button class="btn">Greet me</button>
+</div>
+
+<hr>
+
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<div x-data="{counter : 0}">
+
+    <h2>Increment/decrement with Alpinejs</h2>
+<div x-text="counter">
+
+</div>
+
+<button x-on:click="counter++" >Increment</button>
+<button x-on:click=" if (counter > 0) counter--" >Decrement</button>
+</div>
+
+</body>
+
+</html>
